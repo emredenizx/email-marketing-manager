@@ -1,0 +1,60 @@
+.container {
+    width: 100%;
+
+    :global {
+        .ui.segment {
+            background: none;
+            box-shadow: none;
+            margin: 0;
+            padding: 0;
+            border-radius: 0px;
+            border: none;
+        }
+
+        .ui.table {
+            margin: 0;
+        }
+
+        .ui.table th.one.wide.numbers {
+            width: 4%;
+        }
+
+        .ui.table th.one.wide.editdelete {
+            width: 5%;
+            text-align: center;
+        }
+
+        .ui.table td.editdelete {
+            text-align: center;
+        }
+    }
+}
+
+.dateAdded {
+    text-align: center !important;
+    max-width: 100px;
+}
+
+.linkCompanyDetails {
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #2185d0;
+}
+
+.sortableCell {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.noResults {
+    display: flex;
+    justify-content: center;
+    color: red;
+    padding: 20px;
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}

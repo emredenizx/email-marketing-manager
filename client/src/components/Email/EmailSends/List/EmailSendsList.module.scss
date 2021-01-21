@@ -1,0 +1,48 @@
+.emailSendsList {
+    display: flex;
+    justify-content: center;
+}
+
+.emailSendsList > div {
+    width: 100%;
+}
+
+.emailSendsList > div {
+    :global {
+        .ui.accordion {
+            width: 100%;
+        }
+        .ui.accordion > .title {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .ui.accordion .active.content > div {
+            min-height: 10px;
+        }
+        .ui.accordion .active.content {
+            min-height: 10px;
+        }
+        .ui.accordion .title:not(.ui) {
+            padding: 0.5em;
+            margin-left: 0;
+        }
+    }
+}
+
+.sendTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.sendName {
+    display: block;
+}
+
+.sendDate {
+    max-width: 65px;
+    text-align: center;
+}

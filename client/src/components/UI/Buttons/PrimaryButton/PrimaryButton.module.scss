@@ -1,0 +1,12 @@
+@import "../../../../styles/helpers/mixins";
+@import "../../../../styles/helpers/variables";
+
+.primaryButton {
+    height: inherit;
+    :global {
+        .ui.labeled.icon.button {
+            @include fontPrimaryButtons;
+            height: 100%;
+        }
+    }
+}

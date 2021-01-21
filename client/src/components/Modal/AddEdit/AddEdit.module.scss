@@ -1,0 +1,46 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+
+    :global {
+        .ui.accordion .active.content {
+            background: none;
+            border: 0;
+            box-shadow: none;
+            border-radius: 0;
+        }
+    }
+}
+
+.formContainer > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer > div:not(:first-child) {
+    margin-top: 4em;
+}
+
+.formContainer > div:last-child {
+    margin-bottom: 2em;
+}
+
+.formContainer > div > div:first-child {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.errorMessages {
+    flex-direction: column;
+}
+
+.search {
+    min-height: 230px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 1em 0;
+}

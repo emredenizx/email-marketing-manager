@@ -1,0 +1,54 @@
+.modalCompanyDetails .content {
+    padding: 2.5rem;
+}
+
+.companyDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info {
+    margin-right: 2em;
+    height: 100%;
+}
+
+.sends {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sendsTitle {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    border-bottom: 1px solid #dededf;
+}
+
+.sendsHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 2em 1em;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .companyDetails {
+        flex-direction: column;
+    }
+    .info {
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,23 @@
+@import "../../../styles/helpers/mixins";
+
+.exportToCSV {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.button {
+    margin-left: 1em;
+    :global {
+        .ui.labeled.icon.button {
+            @include fontPrimaryButtons;
+        }
+    }
+}
+
+.resultsText {
+    @include fontPrimaryButtons;
+    font-weight: 700;
+}

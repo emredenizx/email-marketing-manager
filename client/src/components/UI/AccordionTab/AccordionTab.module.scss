@@ -1,0 +1,69 @@
+.accordionTab {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    :global {
+        .ui.accordion .active.title,
+        .ui.accordion .title:not(.ui) {
+            text-align: end;
+            background-color: #f7f7f7;
+            padding: 5px 10px;
+            font-size: 12px;
+            color: #2185d0;
+            box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.11);
+            margin-left: auto;
+        }
+
+        .ui.accordion {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .ui.accordion .active.title {
+            border-radius: 0.25em 0.25em 0 0;
+        }
+
+        .ui.accordion .active.content {
+            display: flex;
+            flex-direction: row;
+            background: #f7f7f7;
+            border-radius: 2px;
+            box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.11);
+        }
+
+        .ui.accordion .active.content > div {
+            display: flex;
+            flex-direction: column;
+            flex: 1 0 auto;
+            padding: 2em 2em;
+            width: 0;
+        }
+
+        .ui.accordion .active.content > div:not(:first-child) {
+            border-left: 1px solid #f1f1f1;
+        }
+
+        .ui.accordion:not(.styled) .title ~ .content:not(.ui):last-child {
+            padding: 0;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .accordionTab {
+        flex-direction: column;
+
+        :global {
+            .ui.accordion .active.content > div {
+                display: flex;
+                flex-direction: column;
+                padding: 0.5em;
+                width: 100%;
+            }
+            .ui.accordion .active.content {
+                flex-direction: column;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import "../../../styles/helpers/mixins";
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container > div:not(:last-child) {
+    margin-bottom: 0.25em;
+}
+
+.container > div > div {
+    @include fontPrimaryButtons;
+    line-height: 1em;
+}
+
+.container > div > div:last-child {
+    margin-left: 1em;
+}
+
+.container > div:nth-last-child(3) {
+    border-top: 1px solid #bfbebe;
+    margin-top: 0.5em;
+    padding-top: 0.75em;
+}
+
+.container > div:nth-last-child(3) > div {
+    font-weight: 700 !important;
+}
+
+.container > div:nth-last-child(-n + 2) > div {
+    color: deeppink;
+    font-weight: 700 !important;
+}

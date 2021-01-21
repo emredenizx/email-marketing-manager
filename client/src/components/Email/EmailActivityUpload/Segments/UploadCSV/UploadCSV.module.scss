@@ -1,0 +1,19 @@
+.container > div:not(:last-child) {
+    margin-bottom: 0.5em;
+}
+
+.browse {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.selectedFile {
+    min-height: 3em;
+    font-size: 13px;
+    font-weight: 700;
+}
+.error {
+    color: red;
+    font-weight: bold;
+}

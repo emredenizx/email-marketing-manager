@@ -1,0 +1,11 @@
+@import "../../../../styles/helpers/mixins";
+
+.secondaryButton {
+    :global {
+        .ui.labeled.icon.button {
+            @include fontSecondaryButtons;
+            height: 100%;
+            margin-left: 0.5em;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.detail {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    background: #f9f9f9;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row:not(:first-child) {
+    margin-top: 1.25em;
+}
+
+.label {
+    font-size: 12px;
+    font-weight: 700;
+    min-width: 10em;
+    text-transform: uppercase;
+}
+
+.data {
+    min-width: 300px;
+}
+
+@media (max-width: 768px) {
+    .data {
+        min-width: 0;
+    }
+    .row {
+        flex-direction: column;
+    }
+}

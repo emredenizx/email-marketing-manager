@@ -1,0 +1,35 @@
+.emailActivity {
+    :global {
+        .ui.labeled.icon.button {
+            width: 100%;
+        }
+    }
+}
+
+.emailActivityModal > .content {
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.steps {
+    :global {
+        .ui.steps {
+            display: flex;
+        }
+
+        .ui.steps .step {
+            width: 0;
+        }
+    }
+}
+
+.segments {
+    :global {
+        .ui.horizontal.segments > .segment {
+            width: 0;
+            padding: 2em;
+            align-items: center;
+        }
+    }
+}

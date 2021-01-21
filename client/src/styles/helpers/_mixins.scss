@@ -1,0 +1,14 @@
+@mixin textFormat {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+@mixin fontPrimaryButtons {
+    @include textFormat();
+    font-size: 12px;
+}
+
+@mixin fontSecondaryButtons {
+    @include textFormat();
+    font-size: 10px;
+}

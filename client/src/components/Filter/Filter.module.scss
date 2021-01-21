@@ -1,0 +1,44 @@
+.filters {
+    display: flex;
+    flex-direction: column;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+}
+
+.items > div:not(:last-child) {
+    padding-right: 2em;
+    margin-right: 2em;
+    border-right: 1px solid #efefef;
+}
+
+.emailActivity,
+.location {
+    display: flex;
+    flex-direction: column;
+}
+
+.emailActivity {
+    flex: 1;
+}
+
+.location {
+    flex: 2;
+}
+
+.location > div:last-child {
+    margin-top: 1em;
+}
+
+.filterTitle {
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+.buttons {
+    margin-top: 2em;
+}

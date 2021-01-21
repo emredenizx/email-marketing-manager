@@ -1,0 +1,57 @@
+.singleActivity {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    background: #f1f1f1;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.eventName {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.reason,
+.type {
+    font-size: 12px;
+    margin-top: 10px;
+    width: 70%;
+}
+
+.delivered {
+    background: #d3ecc9;
+}
+
+.processed {
+    background: #e2e2e2;
+}
+
+.open {
+    background: #b3e49e;
+}
+
+.click {
+    background: #7fbf63;
+}
+
+.bounce {
+    background: #f77070;
+}
+
+.drop {
+    background: #f77070;
+}
+
+.deferred {
+    background: #fbebb2;
+}
+
+.unsubscribe {
+    background: #f77070;
+}

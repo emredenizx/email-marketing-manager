@@ -1,0 +1,26 @@
+.search {
+    display: flex;
+    flex-direction: column;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+}
+
+.items > div > div:first-child {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.items > div:not(:first-child) {
+    margin-top: 3em;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: auto;
+}
